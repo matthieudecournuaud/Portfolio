@@ -5,6 +5,208 @@
 }
 
 body {
-  background-color: #050414;
-  height: 100vh;
+  height: 502, 57vh;
+  background-color: #101722;
+}
+body main {
+  width: 100vw;
+}
+body main #scene {
+  position: relative;
+  overflow-y: scroll;
+}
+body main #scene #bgstarsN2 {
+  position: absolute;
+  top: 0;
+}
+body main #scene #bgstarsN2 .BgimgstarsN2 {
+  width: 110vw;
+}
+body main #scene .earth {
+  margin-top: 3750px;
+  width: 100vw;
+  position: relative;
+}
+body main #scene .earth img {
+  width: 100%;
+}
+body main #scene .containervoyage {
+  margin-top: 70vh;
+  margin-left: 346px;
+  width: 134px;
+  height: 100%;
+}
+body main #scene .containervoyage .containernavette {
+  width: 100%;
+}
+body main #scene .containervoyage .containernavette img {
+  width: 90%;
+}
+body main #scene .containernavette.scroll {
+  -webkit-animation-name: scroll1;
+          animation-name: scroll1;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes scroll1 {
+  0% {
+    transform: translateY(0vh);
+  }
+  100% {
+    transform: translateY(60vh);
+  }
+}
+@keyframes scroll1 {
+  0% {
+    transform: translateY(0vh);
+  }
+  100% {
+    transform: translateY(60vh);
+  }
+}
+body main #scene .containernavette.scroll2 {
+  -webkit-animation-name: scroll2;
+          animation-name: scroll2;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes scroll2 {
+  0% {
+    transform: translateY(60vh);
+  }
+  100% {
+    transform: translateY(110vh);
+  }
+}
+@keyframes scroll2 {
+  0% {
+    transform: translateY(60vh);
+  }
+  100% {
+    transform: translateY(110vh);
+  }
+}
+body main #scene .containernavette.scroll3 {
+  -webkit-animation-name: scroll3;
+          animation-name: scroll3;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes scroll3 {
+  0% {
+    transform: translateY(110vh);
+  }
+  100% {
+    transform: translateY(180vh);
+  }
+}
+@keyframes scroll3 {
+  0% {
+    transform: translateY(110vh);
+  }
+  100% {
+    transform: translateY(180vh);
+  }
+}
+body main #scene .containernavette.scroll4 {
+  -webkit-animation-name: scroll4;
+          animation-name: scroll4;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes scroll4 {
+  0% {
+    transform: translateY(180vh);
+  }
+  100% {
+    transform: translateY(250vh);
+  }
+}
+@keyframes scroll4 {
+  0% {
+    transform: translateY(180vh);
+  }
+  100% {
+    transform: translateY(250vh);
+  }
+}
+body main #scene .containernavette.scroll5 {
+  -webkit-animation-name: scroll5;
+          animation-name: scroll5;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes scroll5 {
+  0% {
+    transform: translateY(250vh);
+  }
+  100% {
+    transform: translateY(300vh);
+  }
+}
+@keyframes scroll5 {
+  0% {
+    transform: translateY(250vh);
+  }
+  100% {
+    transform: translateY(300vh);
+  }
+}
+body main #scene .containernavette.scroll6 {
+  -webkit-animation-name: scroll6;
+          animation-name: scroll6;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes scroll6 {
+  0% {
+    transform: translateY(300vh);
+  }
+  100% {
+    transform: translateY(375vh);
+  }
+}
+@keyframes scroll6 {
+  0% {
+    transform: translateY(300vh);
+  }
+  100% {
+    transform: translateY(375vh);
+  }
+}
+body main #scene .containernavette #navette.scroll7 {
+  -webkit-animation-name: scroll7;
+          animation-name: scroll7;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes scroll7 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes scroll7 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -4,6 +4,133 @@
     box-sizing: border-box;
 }
 body {
-    background-color: rgb(5, 4, 20);
-    height: 100vh;
+    height: 502,57vh;
+    background-color: #101722;
+    main {
+        width: 100vw;
+        #scene {
+            position: relative;
+            overflow-y: scroll;
+            #bgstarsN2 {
+                position: absolute;
+                top: 0;
+                .BgimgstarsN2 {
+                    width:110vw;
+                }
+            }
+            .earth {
+                margin-top: 3750px;
+                width: 100vw;
+                position: relative;
+                img {
+                    width: 100%;
+                }
+            }
+            .containervoyage {
+                margin-top: 70vh;
+                margin-left: 346px;
+                width: 134px;
+                height: 100%;
+                .containernavette {
+                    width: 100%;
+                    img {
+                        width: 90%;
+                    }
+                }
+            }
+            .containernavette.scroll {
+                animation-name: scroll1;
+                animation-duration: 4s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes scroll1 {
+                0% {
+                    transform: translateY(0vh);
+                } 
+                100% {
+                    transform: translateY(60vh);
+                }            
+            }
+            .containernavette.scroll2 {
+                animation-name: scroll2;
+                animation-duration: 4s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes scroll2 {
+                0% {
+                    transform: translateY(60vh);
+                } 
+                100% {
+                    transform: translateY(110vh);
+                }            
+            }
+            .containernavette.scroll3 {
+                animation-name: scroll3;
+                animation-duration: 4s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes scroll3 {
+                0% {
+                    transform: translateY(110vh);
+                } 
+                100% {
+                    transform: translateY(180vh);
+                }            
+            }
+            .containernavette.scroll4 {
+                animation-name: scroll4;
+                animation-duration: 4s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes scroll4 {
+                0% {
+                    transform: translateY(180vh);
+                } 
+                100% {
+                    transform: translateY(250vh);
+                }            
+            }
+            .containernavette.scroll5 {
+                animation-name: scroll5;
+                animation-duration: 4s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes scroll5 {
+                0% {
+                    transform: translateY(250vh);
+                } 
+                100% {
+                    transform: translateY(300vh);
+                }            
+            }
+            .containernavette.scroll6 {
+                animation-name: scroll6;
+                animation-duration: 4s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes scroll6 {
+                0% {
+                    transform: translateY(300vh);
+                } 
+                100% {
+                    transform: translateY(375vh);
+                }            
+            }
+            .containernavette {
+                #navette.scroll7 {
+                animation-name: scroll7;
+                animation-duration: 4s;
+                animation-fill-mode: forwards;
+                }
+            }
+            @keyframes scroll7 {
+                0% {
+                    transform: rotate(0deg);
+                } 
+                100% {
+                    transform: rotate(180deg);
+                }            
+            }
+        }
+    }
 }
