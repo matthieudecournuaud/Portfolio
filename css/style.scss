@@ -11,15 +11,41 @@ body {
         #scene {
             position: relative;
             overflow-y: scroll;
+            #titre1 {
+                display: flex;
+                flex-direction: column;
+                align-content: space-between;
+                margin-top: 20vh;
+                margin-left: 20%;
+                width: 25vw;
+                h1 {
+                    font-family: 'roboto';
+                    font-size: 3rem;
+                    font-weight: 300;
+                    color: white;
+                }
+                h2 {
+                    font-family: 'Poppins';
+                    font-size: 3rem;
+                    font-weight: 300;
+                    color: #B92A55;
+                }
+            }
             #bgstarsN2 {
                 position: absolute;
                 top: 0;
+                height: 3000px;
                 .BgimgstarsN2 {
-                    width:110vw;
+                    width:100%;
                 }
             }
+            .saturne {
+                margin-top: 10vh;
+                width: 100vw;
+                margin-left: 70%;
+            }
             .earth {
-                margin-top: 3750px;
+                margin-top: 460vh;
                 width: 100vw;
                 position: relative;
                 img {
@@ -28,7 +54,7 @@ body {
             }
             .containervoyage {
                 margin-top: 70vh;
-                margin-left: 346px;
+                margin-left: 20%;
                 width: 134px;
                 height: 100%;
                 .containernavette {

@@ -15,15 +15,41 @@ body main #scene {
   position: relative;
   overflow-y: scroll;
 }
+body main #scene #titre1 {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  margin-top: 20vh;
+  margin-left: 20%;
+  width: 25vw;
+}
+body main #scene #titre1 h1 {
+  font-family: "roboto";
+  font-size: 3rem;
+  font-weight: 300;
+  color: white;
+}
+body main #scene #titre1 h2 {
+  font-family: "Poppins";
+  font-size: 3rem;
+  font-weight: 300;
+  color: #B92A55;
+}
 body main #scene #bgstarsN2 {
   position: absolute;
   top: 0;
+  height: 3000px;
 }
 body main #scene #bgstarsN2 .BgimgstarsN2 {
-  width: 110vw;
+  width: 100%;
+}
+body main #scene .saturne {
+  margin-top: 10vh;
+  width: 100vw;
+  margin-left: 70%;
 }
 body main #scene .earth {
-  margin-top: 3750px;
+  margin-top: 460vh;
   width: 100vw;
   position: relative;
 }
@@ -32,7 +58,7 @@ body main #scene .earth img {
 }
 body main #scene .containervoyage {
   margin-top: 70vh;
-  margin-left: 346px;
+  margin-left: 20%;
   width: 134px;
   height: 100%;
 }

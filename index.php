@@ -16,8 +16,17 @@
     <main>
         <div id="scene">
             <img src="./images/BgstarsN1.png" alt="">
+            <div id="titre1">
+                <h1>Matthieu <br>de Cournuaud</h1>
+                <h2>Portfolio</h2>
+
+            </div>
+
             <div id="bgstarsN2" data-depth="0.1">
                 <img class="BgimgstarsN2" src="./images/BgstarsN2.png" alt="">
+            </div>
+            <div class="saturne">
+                <img src="./images/Planete1.png" alt="">
             </div>
             <div class="containervoyage">
                 <div class="containernavette">
