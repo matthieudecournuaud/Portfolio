@@ -7,7 +7,112 @@ body {
     height: 502,57vh;
     background-color: #101722;
     main {
-        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //---------------------------------------------------------------- bloc texte ------------------------------------------------------- 
+        .containertexte {
+            display: none;
+        }
+        .containertexte2 {
+            width: 100%;
+            height: 80vh;
+            border-radius: 40vh 0vh 0 40vh;
+            position: absolute;
+            top: 130vh;
+            display: flex;
+            justify-content: flex-end;
+            background-color: #080B10;
+            animation-name: apparition;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            .containerbloc2 {
+                width: 60%;
+                background-color: #080B10;
+                padding: 3vw;
+                display: flex;
+                justify-content: flex-start;
+                .bloctexte2 {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+                    width: 100%;
+                    color: white;
+                    background-color: #080B10;
+                    h2 {
+                        font-family: 'Poppins';
+                        font-size: 3rem;
+                        font-weight: 300;
+                        line-height: 3em;
+                    }
+                    h3 {
+                        font-family: 'Poppins';
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        text-decoration: none;
+                        color:#B92A55;
+                        line-height: 4rem;
+                    }
+                    a {
+                        font-family: 'roboto';
+                        font-size: 1rem;
+                        font-weight: 400;
+                        text-decoration: none;
+                        color:white;
+                    }
+                    p {
+                        font-family: 'roboto';
+                        font-size: 1rem;
+                        font-weight: 400;
+                        text-decoration: none;
+                        color:white;
+                        line-height: 1rem;
+
+                    }
+                    :nth-child(4){
+                        margin-top: 4vh;
+                    }
+                    :nth-child(5){
+                        margin-bottom: 4vh;
+                    }
+                }
+                .containerh3 {
+                    display: flex;
+                    width: 70%;
+                    justify-content: space-between;
+                    h3 {
+                        font-family: 'Poppins';
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        text-decoration: none;
+                        color:#B92A55;
+                        line-height: 3em;
+                    }
+                    .orange {
+                        font-family: 'Poppins';
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        text-decoration: none;
+                        color:#E98A46;
+                        line-height: 3em;
+                    }
+                }
+                .containerh4 {
+                    display: flex;
+                    width: 82%;
+                    justify-content: space-between;
+                }    
+            }
+        }
+        @keyframes apparition {
+            0% {
+                left: 100vw;
+            }
+            100% {
+                left: 0;
+            }
+        }
+        //---------------------------------------------------------------- contenu graphique ------------------------------------------------------- 
         #scene {
             position: relative;
             overflow-y: scroll;
@@ -44,14 +149,92 @@ body {
                 width: 100vw;
                 margin-left: 70%;
             }
+            .Anneaux1 {
+                margin-top: 20vh;
+                margin-left: 57%;
+            }
+            .galaxy {
+                margin-top: 350vh;
+                margin-left: 80%;
+                width: 4vw;
+                animation-name: turn;
+                animation-duration: 110s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                opacity: 80%;
+                img {
+                    width: 100%;
+                }
+                @keyframes turn {
+                    0% {
+                        transform: rotateX(58deg) rotateY(21deg) rotateZ(0deg);
+                    }
+                    100% {
+                        transform: rotateX(58deg) rotateY(21deg) rotateZ(360deg);
+                    }
+                }
+            }
+            .galaxy2 {
+                margin-top: 240vh;
+                margin-left: 70%;
+                width: 4vw;
+                animation-name: turn;
+                animation-duration: 50s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                opacity: 50%;
+                img {
+                    width: 100%;
+                }
+                @keyframes turn2 {
+                    0% {
+                        transform: rotateX(53deg) rotateY(40deg) rotateZ(0deg);
+                    }
+                    100% {
+                        transform: rotateX(53deg) rotateY(40deg) rotateZ(360deg);
+                    }
+                }
+            }
+            .asteroide {
+                
+                margin-top: 290vh;
+                margin-left: 40%;
+                width: 10vw;
+                animation-name: turn3;
+                animation-duration: 50s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;    
+                img {
+                    width: 100%;
+                }
+                @keyframes turn3 {
+                    0% {
+                        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+                    }
+                    100% {
+                        transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg);
+
+                    }
+                }
+            }
+            .trounoir {
+                margin-top: 150vh;
+                width: 20vw;
+                margin-left: -10vw;
+                opacity: 70%;
+                img {
+                    width: 100%;
+                }
+            }   
             .earth {
-                margin-top: 460vh;
+                margin-top: 458vh;
                 width: 100vw;
-                position: relative;
                 img {
                     width: 100%;
                 }
             }
+        //---------------------------------------------------------------- structure voyage ------------------------------------------------------- 
+
             .containervoyage {
                 margin-top: 70vh;
                 margin-left: 20%;

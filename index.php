@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -14,6 +14,25 @@
 
 <body>
     <main>
+        <div class="containertexte">
+            <div class="containerbloc">
+                <div class="bloctexte">
+                    <h2>Rhuma Sug</h2>
+                    <h3>Lien du projet :</h3>
+                    <a href="https://github.com/matthieudecournuaud/Rhuma-sug">Rhuma Sug</a>
+                    <h3>Présentation du projet :</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum velit consectetur dolore in ea inventore laudantium corrupti sapiente sit? Laboriosam repellat dicta incidunt dolorum sequi ipsum! Deleniti eaque amet similique.</p>
+                    <div class="containerh3">
+                        <h3>Languages utilisés :</h3>
+                        <h3 class="orange">Outils utilisés :</h3>
+                    </div>
+                    <div class="containerh4">
+                        <p>Html, Scss, Javascript, Php</p>
+                        <p>Jmeurise, scrollReveal, PhpMyAdmin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="scene">
             <img src="./images/BgstarsN1.png" alt="">
             <div id="titre1">
@@ -28,6 +47,22 @@
             <div class="saturne">
                 <img src="./images/Planete1.png" alt="">
             </div>
+            <div class="galaxy">
+                <img src="./images/galaxy.png" alt="">
+            </div>
+            <div class="galaxy2">
+                <img src="./images/galaxy2.png" alt="">
+            </div>
+            <div class="asteroide">
+                <img src="./images/asteroide.png" alt="">
+            </div>
+
+            <div class="trounoir">
+                <img src="./images/trounoir.png" alt="">
+            </div>
+
+            <img class="Anneaux1" src="./images/Anneaux1.png" alt="">
+
             <div class="containervoyage">
                 <div class="containernavette">
                     <img id="navette" src="./images/navette.png" alt="">

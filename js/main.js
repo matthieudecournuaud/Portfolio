@@ -1,3 +1,5 @@
+
+
 var scene = document.querySelector('#scene');
 var parallaxInstance = new Parallax(scene);
 
@@ -8,6 +10,11 @@ new simpleParallax(image, {
 
 const voyage = document.querySelector('.containernavette');
 const navette = document.querySelector('#navette');
+let containertexte = document.querySelector('.containertexte');
+let containerbloc = document.querySelector('.containerbloc');
+let bloctexte = document.querySelector('.bloctexte');
+
+
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 260 && window.scrollY < 960) {
@@ -17,6 +24,14 @@ window.addEventListener('scroll', () => {
 window.addEventListener('scroll', () => {
     if (window.scrollY > 960 && window.scrollY < 1450) {
         voyage.classList.add('scroll2')
+    }
+})
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 800) {
+        containertexte.classList.add('containertexte2')
+        bloctexte.classList.add('bloctexte2')
+        containerbloc.classList.add('containerbloc2')
+
     }
 })
 window.addEventListener('scroll', () => {
