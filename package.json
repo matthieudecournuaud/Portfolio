@@ -1,0 +1,22 @@
+{
+  "name": "sphere",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthieudecournuaud/sphere.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthieudecournuaud/sphere/issues"
+  },
+  "homepage": "https://github.com/matthieudecournuaud/sphere#readme",
+  "dependencies": {
+    "three": "^0.138.0"
+  }
+}

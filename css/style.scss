@@ -6,6 +6,10 @@
 body {
     height: 502,57vh;
     background-color: #101722;
+    canvas {
+        width: 100%;
+        height: 100%;
+    }
     main {
         display: flex;
         justify-content: center;
@@ -16,22 +20,23 @@ body {
         }
         .containertexte2 {
             width: 100%;
-            height: 80vh;
+            height: 90%;
             border-radius: 40vh 0vh 0 40vh;
             position: absolute;
             top: 130vh;
             display: flex;
-            justify-content: flex-end;
+            justify-content: flex-start;
             background-color: #080B10;
             animation-name: apparition;
             animation-duration: 2s;
             animation-fill-mode: forwards;
             .containerbloc2 {
-                width: 60%;
-                background-color: #080B10;
-                padding: 3vw;
                 display: flex;
                 justify-content: flex-start;
+                width: 60%;
+                padding: 3vw;
+                margin-left: 30%;
+                background-color: #080B10;
                 .bloctexte2 {
                     display: flex;
                     flex-direction: column;
@@ -39,6 +44,33 @@ body {
                     width: 100%;
                     color: white;
                     background-color: #080B10;
+                    .articlecarousel {
+                        display: flex;
+                        justify-content: flex-start;
+                        height: 10vh;
+                        width: 100%;
+                        .buttoncarousel {
+                            display: flex;
+                            justify-content: space-around;
+                            .carousel-control-prev {
+                                position: relative;
+                                .carousel-control-prev-icon {
+                                    background-image: url("../images/left.svg");
+                                    width: 10vw;
+                                    height: 10vh;
+                                }
+                            }
+                            .carousel-control-next {
+                                position: relative;
+
+                                .carousel-control-next-icon {
+                                    background-image: url("../images/right.svg");
+                                    width: 10vw;
+                                    height: 10vh;
+                                }
+                            }
+                        }
+                    }
                     h2 {
                         font-family: 'Poppins';
                         font-size: 3rem;
@@ -112,6 +144,154 @@ body {
                 left: 0;
             }
         }
+        //---------------------------------------------- bloc 2 ------------------------------------------------------//
+        .containertexte3 {
+            display: none;
+        }
+        .containertexte4 {
+            width: 100%;
+            height: 80%;
+            border-radius: 40vh 0vh 0 40vh;
+            position: absolute;
+            top: 230vh;
+            display: flex;
+            justify-content: center;
+            background-color: #080B10;
+            animation-name: apparition;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            .articlecarousel2 {
+                display: flex;
+                height: 10vh;
+                width: 100%;
+                margin-bottom: 10vh;
+                .buttoncarousel2 {
+                    display: flex;
+                    justify-content: space-around;
+                    .carousel-control-prev {
+                        // margin-left: 10vw;
+                        position: relative;
+                        .carousel-control-prev-icon {
+                            background-image: url("../images/left.svg");
+                            width: 10vw;
+                            height: 10vh;
+                        }
+                    }
+                    .carousel-control-next {
+                        // margin-left: 10vw;
+                        position: relative;
+
+                        .carousel-control-next-icon {
+                            background-image: url("../images/right.svg");
+                            width: 10vw;
+                            height: 10vh;
+                        }
+                    }
+                }
+            }
+                .containerbloc4 {
+                width: 60vw;
+                margin-left: 10vw;
+                background-color: #080B10;
+                padding: 3vw;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                .containerGauche {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 40%;
+                    position: relative;
+                    z-index: 5;
+                    margin-left: 5vw;
+                h2 {
+                    color: white;
+                    font-family: 'Poppins';
+                    font-size: 3rem;
+                    font-weight: 300;
+                    line-height: 1.4em;
+                }
+                h3 {
+                    font-family: 'Poppins';
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color:#B92A55;
+                    line-height: 4rem;
+                }
+                a {
+                    font-family: 'roboto';
+                    font-size: 1rem;
+                    font-weight: 400;
+                    text-decoration: none;
+                    color:white;
+                }
+                p {
+                    font-family: 'roboto';
+                    font-size: 1rem;
+                    font-weight: 400;
+                    text-decoration: none;
+                    color:white;
+                    line-height: 1rem;
+                    
+                }
+                :nth-child(4){
+                    margin-top: 4vh;
+                }
+                :nth-child(5){
+                    margin-bottom: 4vh;
+                }
+                h3 {
+                    font-family: 'Poppins';
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color:#B92A55;
+                    line-height: 3em;
+                }
+                .orange {
+                    font-family: 'Poppins';
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color:#E98A46;
+                    line-height: 3em;
+                }
+            }
+                }   
+                .bloctexte4 {
+                    display: flex;
+                    text-align: left;
+                    width: 100%;
+                    color: white;
+                    justify-content: space-around;
+                    background-color: #080B10;
+                    align-items: center;
+                    .containerDroit {
+                        width: 80%;
+                        margin-left: 6vw;
+                        .space {
+                            width: 100%;
+                            position: relative;
+                            z-index: 4  ;
+                            img {
+                                border-radius: 40vh;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }  
+        }
+    }
+    @keyframes apparition {
+        0% {
+            left: 100vw;
+        }
+        100% {
+            left: 0;
+        }
+    }
         //---------------------------------------------------------------- contenu graphique ------------------------------------------------------- 
         #scene {
             position: relative;
@@ -196,12 +376,11 @@ body {
                 }
             }
             .asteroide {
-                
-                margin-top: 290vh;
-                margin-left: 40%;
-                width: 10vw;
+                margin-top: 265vh;
+                margin-left: -2vw;  
+                width: 7vw;
                 animation-name: turn3;
-                animation-duration: 50s;
+                animation-duration: 60s;
                 animation-timing-function: linear;
                 animation-iteration-count: infinite;    
                 img {
@@ -218,7 +397,7 @@ body {
                 }
             }
             .trounoir {
-                margin-top: 150vh;
+                margin-top: 155vh;
                 width: 20vw;
                 margin-left: -10vw;
                 opacity: 70%;
@@ -234,7 +413,83 @@ body {
                 }
             }
         //---------------------------------------------------------------- structure voyage ------------------------------------------------------- 
+            .ballon0 {
+                visibility: hidden;
+            }
+            .ballon02 {
+                visibility: hidden;
+            }
+            .ballon03 {
+                visibility: hidden;
+            }
+            .ballon {
+                position: absolute;
+                z-index: 3;
+                width: 2vw;
+                margin-top: 465vh;
+                margin-left: 73%;
+                animation-name: ballon1;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                visibility: visible;
+                img {
+                    width: 100%;
+                }
+            }
+            @keyframes ballon1 {
+                0% {
+                    transform: translateY(0vh);
+                }
+                100% {
+                    transform: translateY(-10vh);
+                }
+            }
+            .ballon2 {
+                position: absolute;
+                z-index: 3;
+                width: 6vw;
+                margin-top: 463vh;
+                margin-left: 85%;
+                animation-name: ballon2;
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
+                visibility: visible;
 
+                img {
+                    width: 100%;
+                }
+            }
+            @keyframes ballon2 {
+                0% {
+                    transform: translateY(0vh);
+                }
+                100% {
+                    transform: translateY(-10vh);
+                }
+            }
+            .ballon3 {
+                position: absolute;
+                z-index: 3;
+                width: 10vw;
+                margin-top: 441vh;
+                margin-left: 60%;
+                animation-name: ballon3;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+                visibility: visible;
+
+                img {
+                    width: 100%;
+                }
+            }
+            @keyframes ballon3 {
+                0% {
+                    transform: translateY(0vh,);
+                }
+                100% {
+                    transform: translateY(-10vh);
+                }
+            }
             .containervoyage {
                 margin-top: 70vh;
                 margin-left: 20%;
@@ -342,4 +597,3 @@ body {
             }
         }
     }
-}
