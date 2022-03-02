@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script type="module" src="js/animation.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
     <script src="js/main.js" defer></script>
     <title>Portfolio</title>
 </head>
@@ -127,6 +128,13 @@
                 </div>
             </div>
         </div>
+        <section id="containermusique">
+            <h1>Jouer seul c'est bien,<br>Jouer en équipe, c'est mieux !</h1>
+            <div id="anim">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player id="lottie" src="https://assets5.lottiefiles.com/packages/lf20_euaveaxu.json" background="transparent" speed="1.5" style="width: 300px; height: 300px;" loop></lottie-player>
+            </div>
+        </section>
         <div id="scene">
             <img src="./images/BgstarsN1.png" alt="">
             <div id="titre1">

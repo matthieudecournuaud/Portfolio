@@ -8,10 +8,6 @@ body {
   height: 502, 57vh;
   background-color: #101722;
 }
-body canvas {
-  width: 100%;
-  height: 100%;
-}
 body main {
   display: flex;
   justify-content: center;
@@ -105,7 +101,7 @@ body main .containertexte2 .containerbloc2 .bloctexte2 p {
   font-weight: 400;
   text-decoration: none;
   color: white;
-  line-height: 1rem;
+  line-height: 1.7rem;
 }
 body main .containertexte2 .containerbloc2 .bloctexte2 :nth-child(4) {
   margin-top: 4vh;
@@ -300,6 +296,215 @@ body main .containertexte4 .bloctexte4 .containerDroit .space img {
     left: 0;
   }
 }
+body #containermusique {
+  width: 80%;
+  border-radius: 24px;
+  height: 100%;
+  top: 320vh;
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #080B10;
+  background-size: 2000% 2000%;
+  align-items: center;
+}
+@-webkit-keyframes gradientmove {
+  0% {
+    background: linear-gradient(90deg, #020024 0%, #020024 35%, #b92a55 47%, #b92a55 51%, #b92a55 53%, #020024 65%, #020024 100%);
+    background-position: 20% 20%;
+  }
+  10% {
+    background: linear-gradient(90deg, #020024 0%, #020024 35%, #b92a55 47%, #b92a55 51%, #b92a55 53%, #020024 65%, #020024 100%);
+    background-position: 50% 10%;
+  }
+  20% {
+    background: linear-gradient(90deg, #020024 0%, #020024 35%, #b92a55 47%, #b92a55 51%, #b92a55 53%, #020024 65%, #020024 100%);
+    background-position: 80% 20%;
+  }
+  30% {
+    background: linear-gradient(90deg, #020024 0%, #020024 35%, #b92a55 47%, #b92a55 51%, #b92a55 53%, #020024 65%, #020024 100%);
+    background-position: 90% 50%;
+  }
+  50% {
+    background: linear-gradient(90deg, #020024 0%, #020024 35%, #b92a55 47%, #b92a55 51%, #b92a55 53%, #020024 65%, #020024 100%);
+    background-position: 80% 80%;
+  }
+  60% {
+    background: linear-gradient(90deg, #020024 0%, #020024 35%, #b92a55 47%, #b92a55 51%, #b92a55 53%, #020024 65%, #020024 100%);
+    background-position: 50% 90%;
+  }
+  75% {
+    background: linear-gradient(90deg, #020024 0%, #020024 35%, #b92a55 47%, #b92a55 51%, #b92a55 53%, #020024 65%, #020024 100%);
+    background-position: 20% 80%;
+  }
+  80% {
+    background: linear-gradient(90deg, #020024 0%, #020024 35%, #b92a55 47%, #b92a55 51%, #b92a55 53%, #020024 65%, #020024 100%);
+    background-position: 10% 50%;
+  }
+  100% {
+    background: linear-gradient(90deg, #020024 0%, #020024 35%, #b92a55 47%, #b92a55 51%, #b92a55 53%, #020024 65%, #020024 100%);
+    background-position: 20% 20%;
+  }
+}
+@keyframes gradientmove {
+  0% {
+    background: linear-gradient(90deg, #020024 0%, #020024 35%, #b92a55 47%, #b92a55 51%, #b92a55 53%, #020024 65%, #020024 100%);
+    background-position: 20% 20%;
+  }
+  10% {
+    background: linear-gradient(90deg, #020024 0%, #020024 35%, #b92a55 47%, #b92a55 51%, #b92a55 53%, #020024 65%, #020024 100%);
+    background-position: 50% 10%;
+  }
+  20% {
+    background: linear-gradient(90deg, #020024 0%, #020024 35%, #b92a55 47%, #b92a55 51%, #b92a55 53%, #020024 65%, #020024 100%);
+    background-position: 80% 20%;
+  }
+  30% {
+    background: linear-gradient(90deg, #020024 0%, #020024 35%, #b92a55 47%, #b92a55 51%, #b92a55 53%, #020024 65%, #020024 100%);
+    background-position: 90% 50%;
+  }
+  50% {
+    background: linear-gradient(90deg, #020024 0%, #020024 35%, #b92a55 47%, #b92a55 51%, #b92a55 53%, #020024 65%, #020024 100%);
+    background-position: 80% 80%;
+  }
+  60% {
+    background: linear-gradient(90deg, #020024 0%, #020024 35%, #b92a55 47%, #b92a55 51%, #b92a55 53%, #020024 65%, #020024 100%);
+    background-position: 50% 90%;
+  }
+  75% {
+    background: linear-gradient(90deg, #020024 0%, #020024 35%, #b92a55 47%, #b92a55 51%, #b92a55 53%, #020024 65%, #020024 100%);
+    background-position: 20% 80%;
+  }
+  80% {
+    background: linear-gradient(90deg, #020024 0%, #020024 35%, #b92a55 47%, #b92a55 51%, #b92a55 53%, #020024 65%, #020024 100%);
+    background-position: 10% 50%;
+  }
+  100% {
+    background: linear-gradient(90deg, #020024 0%, #020024 35%, #b92a55 47%, #b92a55 51%, #b92a55 53%, #020024 65%, #020024 100%);
+    background-position: 20% 20%;
+  }
+}
+body #containermusique #anim {
+  margin-top: 60vh;
+  width: 40%;
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+}
+body #containermusique h1 {
+  color: #cecbc9;
+}
+body #containermusique .columnPlay {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  height: 40%;
+  position: relative;
+  z-index: 2;
+}
+body #containermusique .columnPlay .containercircle1 {
+  width: 7vw;
+  height: 7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #containermusique .columnPlay .containercircle1 .circle1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  border: solid 1px rgba(206, 203, 201, 0.4);
+}
+body #containermusique .columnPlay .containercircle1 .circle1 .containercircle2 {
+  width: 3vw;
+  height: 3vw;
+}
+body #containermusique .columnPlay .containercircle1 .circle1 .containercircle2 .circle2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top right, #B92A55, #E98A46);
+}
+body #containermusique .columnPlay .containercircle1 .circle1 .containercircle2 .circle2 .playpause {
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  background-color: #080B10;
+}
+@-webkit-keyframes son1 {
+  0% {
+    width: 80%;
+    height: 80%;
+    border: solid 1px #cecbc9;
+  }
+  50% {
+    width: 70%;
+    height: 70%;
+    border: solid 1px #cecbc9;
+  }
+  100% {
+    width: 80%;
+    height: 80%;
+    border: solid 1px #cecbc9;
+  }
+}
+@keyframes son1 {
+  0% {
+    width: 80%;
+    height: 80%;
+    border: solid 1px #cecbc9;
+  }
+  50% {
+    width: 70%;
+    height: 70%;
+    border: solid 1px #cecbc9;
+  }
+  100% {
+    width: 80%;
+    height: 80%;
+    border: solid 1px #cecbc9;
+  }
+}
+@-webkit-keyframes son2 {
+  0% {
+    width: 60%;
+    height: 60%;
+  }
+  50% {
+    width: 90%;
+    height: 90%;
+  }
+  100% {
+    width: 60%;
+    height: 60%;
+  }
+}
+@keyframes son2 {
+  0% {
+    width: 60%;
+    height: 60%;
+  }
+  50% {
+    width: 90%;
+    height: 90%;
+  }
+  100% {
+    width: 60%;
+    height: 60%;
+  }
+}
+body #containermusique .columnPlay .circle1:hover {
+  border: solid 1px #cecbc9;
+}
 body #scene {
   position: relative;
   overflow-y: scroll;
@@ -327,7 +532,7 @@ body #scene #titre1 h2 {
 body #scene #bgstarsN2 {
   position: absolute;
   top: 0;
-  height: 3000px;
+  height: 100%;
 }
 body #scene #bgstarsN2 .BgimgstarsN2 {
   width: 100%;
