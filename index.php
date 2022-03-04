@@ -20,7 +20,6 @@
     <main>
         <div class="containertexte">
             <div class="containerbloc">
-
                 <div class="bloctexte">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -136,17 +135,16 @@
             </div>
         </section>
         <div id="scene">
-            <img src="./images/BgstarsN1.png" alt="">
+            <img id="bgstars1" src="./images/BgstarsN1.png" alt="">
             <div id="titre1">
                 <h1>Matthieu <br>de Cournuaud</h1>
                 <h2>Portfolio</h2>
             </div>
-
             <div id="bgstarsN2" data-depth="0.1">
                 <img class="BgimgstarsN2" src="./images/BgstarsN2.png" alt="">
             </div>
             <div class="saturne">
-                <img src="./images/Planete1.png" alt="">
+                <img src="./images/planete1.png" alt="">
             </div>
             <div class="galaxy">
                 <img src="./images/galaxy.png" alt="">
@@ -157,33 +155,31 @@
             <div class="asteroide">
                 <img src="./images/asteroide.png" alt="">
             </div>
-
             <div class="trounoir">
                 <img src="./images/trounoir.png" alt="">
             </div>
-
-            <img class="Anneaux1" src="./images/Anneaux1.png" alt="">
-
             <div class="containervoyage">
-                <div class="containernavette">
+                <div id="containernavette">
                     <img id="navette" src="./images/navette.png" alt="">
                 </div>
             </div>
-            <div class="ballon0">
-                <img src="./images/ballon.png" alt="">
-            </div>
-            <div class="ballon02">
-                <img src="./images/ballonrose.png" alt="">
-            </div>
-            <div class="ballon03">
-                <img src="./images/ballon.png" alt="">
-            </div>
-            <div class="earth">
-                <img src="./images/earth.png" alt="">
-            </div>
         </div>
-
-
+        <article id="ballons">
+            <div id="ballonsfloat">
+                <div class="ballon03">
+                    <img src="./images/ballon.png" alt="">
+                </div>
+                <div class="ballon02">
+                    <img src="./images/ballonrose.png" alt="">
+                </div>
+                <div class="ballon01">
+                    <img src="./images/ballon.png" alt="">
+                </div>
+            </div>
+        </article>
+        <div class="earth">
+            <img src="./images/earth.png" alt="">
+        </div>
     </main>
 </body>
 

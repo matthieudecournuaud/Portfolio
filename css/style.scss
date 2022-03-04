@@ -5,12 +5,14 @@
     box-sizing: border-box;
 }
 body {
-    height: 502,57vh;
+    height: 600vh;
     background-color: #101722;
     main {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 100%;
         //---------------------------------------------------------------- bloc texte ------------------------------------------------------- 
         .containertexte {
             display: none;
@@ -59,7 +61,6 @@ body {
                             }
                             .carousel-control-next {
                                 position: relative;
-
                                 .carousel-control-next-icon {
                                     background-image: url("../images/right.svg");
                                     width: 10vw;
@@ -166,7 +167,6 @@ body {
                     display: flex;
                     justify-content: space-around;
                     .carousel-control-prev {
-                        // margin-left: 10vw;
                         position: relative;
                         .carousel-control-prev-icon {
                             background-image: url("../images/left.svg");
@@ -175,9 +175,7 @@ body {
                         }
                     }
                     .carousel-control-next {
-                        // margin-left: 10vw;
                         position: relative;
-
                         .carousel-control-next-icon {
                             background-image: url("../images/right.svg");
                             width: 10vw;
@@ -186,7 +184,7 @@ body {
                     }
                 }
             }
-                .containerbloc4 {
+            .containerbloc4 {
                 width: 60vw;
                 margin-left: 10vw;
                 background-color: #080B10;
@@ -202,241 +200,209 @@ body {
                     position: relative;
                     z-index: 5;
                     margin-left: 5vw;
-                h2 {
-                    color: white;
-                    font-family: 'Poppins';
-                    font-size: 3rem;
-                    font-weight: 300;
-                    line-height: 1.4em;
+                    h2 {
+                        color: white;
+                        font-family: 'Poppins';
+                        font-size: 3rem;
+                        font-weight: 300;
+                        line-height: 1.4em;
+                    }
+                    h3 {
+                        font-family: 'Poppins';
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        text-decoration: none;
+                        color:#B92A55;
+                        line-height: 4rem;
+                    }
+                    a {
+                        font-family: 'roboto';
+                        font-size: 1rem;
+                        font-weight: 400;
+                        text-decoration: none;
+                        color:white;
+                    }
+                    p {
+                        font-family: 'roboto';
+                        font-size: 1rem;
+                        font-weight: 400;
+                        text-decoration: none;
+                        color:white;
+                        line-height: 1rem;  
+                    }
+                    :nth-child(4){
+                        margin-top: 4vh;
+                    }
+                    :nth-child(5){
+                        margin-bottom: 4vh;
+                    }
+                    h3 {
+                        font-family: 'Poppins';
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        text-decoration: none;
+                        color:#B92A55;
+                        line-height: 3em;
+                    }
+                    .orange {
+                        font-family: 'Poppins';
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        text-decoration: none;
+                        color:#E98A46;
+                        line-height: 3em;
+                    }
                 }
-                h3 {
-                    font-family: 'Poppins';
-                    font-size: 1.5rem;
-                    font-weight: 500;
-                    text-decoration: none;
-                    color:#B92A55;
-                    line-height: 4rem;
-                }
-                a {
-                    font-family: 'roboto';
-                    font-size: 1rem;
-                    font-weight: 400;
-                    text-decoration: none;
-                    color:white;
-                }
-                p {
-                    font-family: 'roboto';
-                    font-size: 1rem;
-                    font-weight: 400;
-                    text-decoration: none;
-                    color:white;
-                    line-height: 1rem;
-                    
-                }
-                :nth-child(4){
-                    margin-top: 4vh;
-                }
-                :nth-child(5){
-                    margin-bottom: 4vh;
-                }
-                h3 {
-                    font-family: 'Poppins';
-                    font-size: 1.5rem;
-                    font-weight: 500;
-                    text-decoration: none;
-                    color:#B92A55;
-                    line-height: 3em;
-                }
-                .orange {
-                    font-family: 'Poppins';
-                    font-size: 1.5rem;
-                    font-weight: 500;
-                    text-decoration: none;
-                    color:#E98A46;
-                    line-height: 3em;
-                }
-            }
-                }   
-                .bloctexte4 {
-                    display: flex;
-                    text-align: left;
-                    width: 100%;
-                    color: white;
-                    justify-content: space-around;
-                    background-color: #080B10;
-                    align-items: center;
-                    .containerDroit {
-                        width: 80%;
-                        margin-left: 6vw;
-                        .space {
+            }   
+            .bloctexte4 {
+                display: flex;
+                text-align: left;
+                width: 100%;
+                color: white;
+                justify-content: space-around;
+                background-color: #080B10;
+                align-items: center;
+                .containerDroit {
+                    width: 80%;
+                    margin-left: 6vw;
+                    .space {
+                        width: 100%;
+                        position: relative;
+                        z-index: 4  ;
+                        img {
+                            border-radius: 40vh;
                             width: 100%;
-                            position: relative;
-                            z-index: 4  ;
-                            img {
-                                border-radius: 40vh;
-                                width: 100%;
-                            }
                         }
                     }
-                }  
+                }
+            }  
         }
-    }
-    @keyframes apparition {
-        0% {
-            left: 100vw;
+        @keyframes apparition {
+            0% {
+                left: 100vw;
+            }
+            100% {
+                left: 0;
+            }
         }
-        100% {
-            left: 0;
-        }
-    }
-    #containermusique {
-        // right: 100px;
-        width: 80%;
-        border-radius: 24px;
-        height: 100%;
-        top: 320vh;
-        position: absolute;
-        z-index: 3;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        background-color: #080B10;
-        background-size: 2000% 2000%;
-       
-        // background-position: 0% 0%;
-        align-items: center;
-        @keyframes gradientmove {
-            0%{
-                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 35%, rgba(185,42,85,1) 47%, rgba(185,42,85,1) 51%, rgba(185,42,85,1) 53%, rgba(2,0,36,1) 65%, rgba(2,0,36,1) 100%);                background-position:20% 20%}
-            10%{
-                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 35%, rgba(185,42,85,1) 47%, rgba(185,42,85,1) 51%, rgba(185,42,85,1) 53%, rgba(2,0,36,1) 65%, rgba(2,0,36,1) 100%);                background-position:50% 10%}
-            20%{
-                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 35%, rgba(185,42,85,1) 47%, rgba(185,42,85,1) 51%, rgba(185,42,85,1) 53%, rgba(2,0,36,1) 65%, rgba(2,0,36,1) 100%);                background-position:80% 20%}
-            30%{
-                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 35%, rgba(185,42,85,1) 47%, rgba(185,42,85,1) 51%, rgba(185,42,85,1) 53%, rgba(2,0,36,1) 65%, rgba(2,0,36,1) 100%);                background-position:90% 50%}
-            50%{
-                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 35%, rgba(185,42,85,1) 47%, rgba(185,42,85,1) 51%, rgba(185,42,85,1) 53%, rgba(2,0,36,1) 65%, rgba(2,0,36,1) 100%);                background-position:80% 80%}
-            60%{
-                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 35%, rgba(185,42,85,1) 47%, rgba(185,42,85,1) 51%, rgba(185,42,85,1) 53%, rgba(2,0,36,1) 65%, rgba(2,0,36,1) 100%);                background-position:50% 90%}
-            75%{
-                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 35%, rgba(185,42,85,1) 47%, rgba(185,42,85,1) 51%, rgba(185,42,85,1) 53%, rgba(2,0,36,1) 65%, rgba(2,0,36,1) 100%);                background-position:20% 80%}
-            80%{
-                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 35%, rgba(185,42,85,1) 47%, rgba(185,42,85,1) 51%, rgba(185,42,85,1) 53%, rgba(2,0,36,1) 65%, rgba(2,0,36,1) 100%);                background-position:10% 50%}
-            100%{
-                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 35%, rgba(185,42,85,1) 47%, rgba(185,42,85,1) 51%, rgba(185,42,85,1) 53%, rgba(2,0,36,1) 65%, rgba(2,0,36,1) 100%);                background-position:20% 20%}
-        }
-        #anim {
-            margin-top: 60vh;
-            width: 40%;
+        #containermusique {
+            width: 80%;
+            border-radius: 24px;
+            height: 100%;
+            top: 320vh;
             position: absolute;
-            z-index: 4;
+            z-index: 3;
             display: flex;
-            justify-content: center;
-        }
-        h1 {
-            color: #cecbc9;
-        }
-        .columnPlay {
-            display: flex;
-            justify-content: space-around;
-            width: 70%;
-            height: 40%;
-            position: relative;
-            z-index: 2;
-            .containercircle1 {
-                width: 7vw;
-                height: 7vw;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background-color: #080B10;
+            background-size: 2000% 2000%;
+            align-items: center;
+            @keyframes gradientmove {
+                0%{
+                    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 35%, rgba(185,42,85,1) 47%, rgba(185,42,85,1) 51%, rgba(185,42,85,1) 53%, rgba(2,0,36,1) 65%, rgba(2,0,36,1) 100%);
+                }
+                100%{
+                    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 35%, rgba(185,42,85,1) 47%, rgba(185,42,85,1) 51%, rgba(185,42,85,1) 53%, rgba(2,0,36,1) 65%, rgba(2,0,36,1) 100%); 
+                }
+            }
+            #anim {
+                margin-top: 60vh;
+                width: 40%;
+                position: absolute;
+                z-index: 4;
                 display: flex;
                 justify-content: center;
-                align-items: center;
-                .circle1 {
+            }
+            h1 {
+                color: #cecbc9;
+            }
+            .columnPlay {
+                display: flex;
+                justify-content: space-around;
+                width: 70%;
+                height: 40%;
+                position: relative;
+                z-index: 2;
+                .containercircle1 {
+                    width: 7vw;
+                    height: 7vw;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    border-radius: 50%;
-                    width: 80%;
-                    height: 80%;
-                    border: solid 1px rgba(206, 203, 201, 0.4);
-                    .containercircle2 {
-                        width: 3vw;
-                        height: 3vw;
-                        .circle2 {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            border-radius: 50%;
-                            width: 100%;
-                            height: 100%;
-                            background: linear-gradient(to top right, #B92A55,#E98A46);
-                            .playpause {
+                    .circle1 {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        width: 80%;
+                        height: 80%;
+                        border: solid 1px rgba(206, 203, 201, 0.4);
+                        .containercircle2 {
+                            width: 3vw;
+                            height: 3vw;
+                            .circle2 {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
                                 border-radius: 50%;
-                                width: 80%;
-                                height: 80%;
-                                background-color: #080B10;
-                            }
-                            // .play {
-                            //     border-radius: 50%;
-                            //     width: 50%;
-                            //     height: 50%;
-                            //     background-color: #cecbc9;
-                            //     // display: none;
-                            // }
-                            // .paused {
-                            //     // display: flex;   
-                            //     border-radius: 50%;
-                            //     width: 50%;
-                            //     height: 50%;
-                            //     background-color: #cecbc9;
-                            //     animation-name: son2;
-                            //     animation-duration: 2s;
-                            //     animation-iteration-count: infinite;
-                            // }
-                            @keyframes son1 {
-                                0% {
+                                width: 100%;
+                                height: 100%;
+                                background: linear-gradient(to top right, #B92A55,#E98A46);
+                                .playpause {
+                                    border-radius: 50%;
                                     width: 80%;
                                     height: 80%;
-                                    border: solid 1px rgba(206, 203, 201, 1);
+                                    background-color: #080B10;
                                 }
-                                50% {
-                                    width: 70%;
-                                    height: 70%;
-                                    border: solid 1px rgba(206, 203, 201, 1);
+                                @keyframes son1 {
+                                    0% {
+                                        width: 80%;
+                                        height: 80%;
+                                        border: solid 1px rgba(206, 203, 201, 1);
+                                    }
+                                    50% {
+                                        width: 70%;
+                                        height: 70%;
+                                        border: solid 1px rgba(206, 203, 201, 1);
 
-                                }
-                                100% {
-                                    width: 80%;
-                                    height: 80%;
-                                    border: solid 1px rgba(206, 203, 201, 1);
+                                    }
+                                    100% {
+                                        width: 80%;
+                                        height: 80%;
+                                        border: solid 1px rgba(206, 203, 201, 1);
 
-                                }
-                            }     
-                            @keyframes son2 {
-                                0% {
-                                    width: 60%;
-                                    height: 60%;
-                                }
-                                50% {
-                                    width: 90%;
-                                    height: 90%;
-                                }
-                                100% {
-                                    width: 60%;
-                                    height: 60%;
+                                    }
+                                }     
+                                @keyframes son2 {
+                                    0% {
+                                        width: 60%;
+                                        height: 60%;
+                                    }
+                                    50% {
+                                        width: 90%;
+                                        height: 90%;
+                                    }
+                                    100% {
+                                        width: 60%;
+                                        height: 60%;
+                                    }
                                 }
                             }
                         }
                     }
                 }
-            }
-            .circle1:hover {
-                border: solid 1px rgba(206, 203, 201, 1);
+                .circle1:hover {
+                    border: solid 1px rgba(206, 203, 201, 1);
+                }
             }
         }
-    }
-        //---------------------------------------------------------------- contenu graphique ------------------------------------------------------- 
+
+        //------------------------------------------------------ SCENE ----------------------------------------------------//
         #scene {
             position: relative;
             overflow-y: scroll;
+            height: 100%;
             #titre1 {
                 display: flex;
                 flex-direction: column;
@@ -457,23 +423,22 @@ body {
                     color: #B92A55;
                 }
             }
-
+            #bgstars1 {
+                width: 100%;
+                // height: 100%;
+            }
             #bgstarsN2 {
-                position: absolute;
+                width: 100%;
+                // height: 100%;
                 top: 0;
-                height: 100%;
                 .BgimgstarsN2 {
                     width:100%;
                 }
             }
             .saturne {
                 margin-top: 10vh;
-                width: 100vw;
+                width: 100%;
                 margin-left: 70%;
-            }
-            .Anneaux1 {
-                margin-top: 20vh;
-                margin-left: 57%;
             }
             .galaxy {
                 margin-top: 350vh;
@@ -547,195 +512,103 @@ body {
                     width: 100%;
                 }
             }   
-            .earth {
-                margin-top: 458vh;
-                width: 100vw;
-                img {
-                    width: 100%;
-                }
-            }
-        //---------------------------------------------------------------- structure voyage ------------------------------------------------------- 
-            .ballon0 {
-                visibility: hidden;
-            }
-            .ballon02 {
-                visibility: hidden;
-            }
-            .ballon03 {
-                visibility: hidden;
-            }
-            .ballon {
-                position: absolute;
-                z-index: 3;
-                width: 2vw;
-                margin-top: 465vh;
-                margin-left: 73%;
-                animation-name: ballon1;
-                animation-duration: 5s;
-                animation-fill-mode: forwards;
-                visibility: visible;
-                img {
-                    width: 100%;
-                }
-            }
-            @keyframes ballon1 {
-                0% {
-                    transform: translateY(0vh);
-                }
-                100% {
-                    transform: translateY(-10vh);
-                }
-            }
-            .ballon2 {
-                position: absolute;
-                z-index: 3;
-                width: 6vw;
-                margin-top: 463vh;
-                margin-left: 85%;
-                animation-name: ballon2;
-                animation-duration: 3s;
-                animation-fill-mode: forwards;
-                visibility: visible;
-
-                img {
-                    width: 100%;
-                }
-            }
-            @keyframes ballon2 {
-                0% {
-                    transform: translateY(0vh);
-                }
-                100% {
-                    transform: translateY(-10vh);
-                }
-            }
-            .ballon3 {
-                position: absolute;
-                z-index: 3;
-                width: 10vw;
-                margin-top: 441vh;
-                margin-left: 60%;
-                animation-name: ballon3;
-                animation-duration: 2s;
-                animation-fill-mode: forwards;
-                visibility: visible;
-
-                img {
-                    width: 100%;
-                }
-            }
-            @keyframes ballon3 {
-                0% {
-                    transform: translateY(0vh,);
-                }
-                100% {
-                    transform: translateY(-10vh);
-                }
-            }
+            //---------------------------------------------------------------- structure voyage ------------------------------------------------------- 
             .containervoyage {
-                margin-top: 70vh;
+                // margin-top: -30vh;
                 margin-left: 20%;
                 width: 134px;
                 height: 100%;
-                .containernavette {
+                #containernavette {
                     width: 100%;
                     img {
                         width: 90%;
                     }
                 }
             }
-            .containernavette.scroll {
-                animation-name: scroll1;
-                animation-duration: 4s;
-                animation-fill-mode: forwards;
-            }
-            @keyframes scroll1 {
-                0% {
-                    transform: translateY(0vh);
-                } 
-                100% {
-                    transform: translateY(60vh);
-                }            
-            }
-            .containernavette.scroll2 {
-                animation-name: scroll2;
-                animation-duration: 4s;
-                animation-fill-mode: forwards;
-            }
-            @keyframes scroll2 {
-                0% {
-                    transform: translateY(60vh);
-                } 
-                100% {
-                    transform: translateY(110vh);
-                }            
-            }
-            .containernavette.scroll3 {
-                animation-name: scroll3;
-                animation-duration: 4s;
-                animation-fill-mode: forwards;
-            }
-            @keyframes scroll3 {
-                0% {
-                    transform: translateY(110vh);
-                } 
-                100% {
-                    transform: translateY(180vh);
-                }            
-            }
-            .containernavette.scroll4 {
-                animation-name: scroll4;
-                animation-duration: 4s;
-                animation-fill-mode: forwards;
-            }
-            @keyframes scroll4 {
-                0% {
-                    transform: translateY(180vh);
-                } 
-                100% {
-                    transform: translateY(250vh);
-                }            
-            }
-            .containernavette.scroll5 {
-                animation-name: scroll5;
-                animation-duration: 4s;
-                animation-fill-mode: forwards;
-            }
-            @keyframes scroll5 {
-                0% {
-                    transform: translateY(250vh);
-                } 
-                100% {
-                    transform: translateY(300vh);
-                }            
-            }
-            .containernavette.scroll6 {
-                animation-name: scroll6;
-                animation-duration: 4s;
-                animation-fill-mode: forwards;
-            }
-            @keyframes scroll6 {
-                0% {
-                    transform: translateY(300vh);
-                } 
-                100% {
-                    transform: translateY(375vh);
-                }            
-            }
-            .containernavette {
-                #navette.scroll7 {
-                animation-name: scroll7;
-                animation-duration: 4s;
-                animation-fill-mode: forwards;
+        }
+        #ballons {
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            background: transparent;
+            #ballonsfloat{
+                width: 40%;
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-around;
+                background: transparent;
+                .ballon01 {
+                    visibility: hidden;
+                }
+                .ballon02 {
+                    visibility: hidden;
+                }
+                .ballon03 {
+                    visibility: hidden;
+                }
+                .ballon {
+                    width: 2vw;
+                    animation-name: ballon1;
+                    animation-duration: 5s;
+                    animation-fill-mode: forwards;
+                    visibility: visible;
+                    img {
+                        width: 100%;
+                    }
+                }
+                @keyframes ballon1 {
+                    0% {
+                        transform: translateY(0vh);
+                    }
+                    100% {
+                        transform: translateY(-3vh);
+                    }
+                }
+                .ballon2 {
+                    width: 6vw;
+                    animation-name: ballon2;
+                    animation-duration: 3s;
+                    animation-fill-mode: forwards;
+                    visibility: visible;
+                    img {
+                        width: 100%;
+                    }
+                }
+                @keyframes ballon2 {
+                    0% {
+                        transform: translateY(0vh);
+                    }
+                    100% {
+                        transform: translateY(-10vh);
+                    }
+                }
+                .ballon3 {
+                    width: 10vw;
+                    animation-name: ballon3;
+                    animation-duration: 2s;
+                    animation-fill-mode: forwards;
+                    visibility: visible;
+                    img {
+                        width: 100%;
+                    }
+                }
+                @keyframes ballon3 {
+                    0% {
+                        transform: translateY(0vh,);
+                    }
+                    100% {
+                        transform: translateY(-10vh);
+                    }
                 }
             }
-            @keyframes scroll7 {
-                0% {
-                    transform: rotate(0deg);
-                } 
-                100% {
-                    transform: rotate(180deg);
-                }            
+        }
+        .earth {
+            width: 100%;
+            img {
+                width: 100%;
             }
         }
     }
+}      
