@@ -134,6 +134,14 @@
                 <lottie-player id="lottie" src="https://assets5.lottiefiles.com/packages/lf20_euaveaxu.json" background="transparent" speed="1.5" style="width: 300px; height: 300px;" loop></lottie-player>
             </div>
         </section>
+        <section id="dernier">
+            <article id="article1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At illum rem, aspernatur est minus aperiam itaque. Quae, commodi. Vitae perferendis aut possimus quia illo nesciunt veritatis? Veniam doloribus eveniet dolore.</p>
+            </article>
+            <article id="article2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At illum rem, aspernatur est minus aperiam itaque. Quae, commodi. Vitae perferendis aut possimus quia illo nesciunt veritatis? Veniam doloribus eveniet dolore.</p>
+            </article>
+        </section>
         <div id="scene">
             <img id="bgstars1" src="./images/BgstarsN1.png" alt="">
             <div id="titre1">
@@ -177,9 +185,7 @@
                 </div>
             </div>
         </article>
-        <div class="earth">
-            <img src="./images/earth.png" alt="">
-        </div>
+
     </main>
 </body>
 

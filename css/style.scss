@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body {
-    height: 600vh;
+    height: 540vh;
     background-color: #101722;
     main {
         display: flex;
@@ -397,6 +397,30 @@ body {
                 }
             }
         }
+        #dernier {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            height: 50vh;
+            top: 450vh;
+            position: absolute;
+            z-index: 3;
+            color: white;
+            #article1 {
+                width: 30%;
+                height: 100%;
+                background-color: #101722;
+                border-radius: 24px;
+            }
+            #article2 {
+                width: 30%;
+                height: 100%;
+                background-color: #B92A55;
+                margin-right: 6%;
+                border-radius: 24px;
+
+            }
+        }
 
         //------------------------------------------------------ SCENE ----------------------------------------------------//
         #scene {
@@ -425,12 +449,10 @@ body {
             }
             #bgstars1 {
                 width: 100%;
-                // height: 100%;
+                height: 97%;
             }
             #bgstarsN2 {
                 width: 100%;
-                // height: 100%;
-                top: 0;
                 .BgimgstarsN2 {
                     width:100%;
                 }
@@ -514,9 +536,8 @@ body {
             }   
             //---------------------------------------------------------------- structure voyage ------------------------------------------------------- 
             .containervoyage {
-                // margin-top: -30vh;
                 margin-left: 20%;
-                width: 134px;
+                width: 10%;
                 height: 100%;
                 #containernavette {
                     width: 100%;
@@ -528,17 +549,19 @@ body {
         }
         #ballons {
             width: 100%;
-            height: 50vh;
+            height: 15vh;
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
-            background: transparent;
+            background-image: url(../images/earth.png);
+            background-size: cover;
+            background-repeat: no-repeat;
             #ballonsfloat{
-                width: 40%;
+                position: absolute;
+                width: 50%;
                 display: flex;
                 align-items: flex-end;
                 justify-content: space-around;
-                background: transparent;
                 .ballon01 {
                     visibility: hidden;
                 }
@@ -551,34 +574,39 @@ body {
                 .ballon {
                     width: 2vw;
                     animation-name: ballon1;
-                    animation-duration: 5s;
+                    animation-duration: 8s;
                     animation-fill-mode: forwards;
                     visibility: visible;
+                    margin-right: 30%;
                     img {
                         width: 100%;
                     }
                 }
                 @keyframes ballon1 {
                     0% {
-                        transform: translateY(0vh);
+                        transform: translateY(-9vh);
                     }
                     100% {
-                        transform: translateY(-3vh);
+                        transform: translateY(-12vh);
                     }
                 }
                 .ballon2 {
                     width: 6vw;
                     animation-name: ballon2;
-                    animation-duration: 3s;
+                    animation-duration: 7s;
                     animation-fill-mode: forwards;
                     visibility: visible;
+                    animation-iteration-count: infinite;
                     img {
                         width: 100%;
                     }
                 }
                 @keyframes ballon2 {
                     0% {
-                        transform: translateY(0vh);
+                        transform: translateY(-10vh);
+                    }
+                    50% {
+                        transform: translateY(-11vh);
                     }
                     100% {
                         transform: translateY(-10vh);
@@ -586,28 +614,29 @@ body {
                 }
                 .ballon3 {
                     width: 10vw;
-                    animation-name: ballon3;
-                    animation-duration: 2s;
-                    animation-fill-mode: forwards;
+                    animation: ballon3pre;
+                    animation-duration: 5s;
                     visibility: visible;
+                    animation-fill-mode: forwards;
+                    animation-iteration-count: infinite;
+                    margin-right: 10%;
+                    
                     img {
                         width: 100%;
                     }
                 }
-                @keyframes ballon3 {
+                @keyframes ballon3pre {
+                    
                     0% {
-                        transform: translateY(0vh,);
+                        transform: translateY(-5vh);
+                    }
+                    50% {
+                        transform: translateY(-7vh);
                     }
                     100% {
-                        transform: translateY(-10vh);
+                        transform: translateY(-5vh);
                     }
                 }
-            }
-        }
-        .earth {
-            width: 100%;
-            img {
-                width: 100%;
             }
         }
     }

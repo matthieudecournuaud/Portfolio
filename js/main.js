@@ -17,7 +17,7 @@ let containertexte3 = document.querySelector('.containertexte3');
 let containerbloc3 = document.querySelector('.containerbloc3');
 let bloctexte3 = document.querySelector('.bloctexte3');
 
-//----------------------------------------------animation voyage ----------------------------------------------------------//
+//--------------------------------------------    ||  ANIMATION VOYAGE  ||   ---------------------------------------------//
 
 voyage.style.transform = `translateY(${convertpxtovh(window.scrollY)}vh)`;
 
@@ -28,12 +28,13 @@ window.addEventListener('scroll', () => {
     scrollAnimate = 60 + convertpxtovh(window.scrollY);
 
     voyageAnimate(scrollAnimate, 3000);
-
 })
-
+//----------------------------------------------Function convertpxtovh------------------------------------------------------//
 function convertpxtovh(px) {
     return 100 * (px / window.innerHeight);
 }
+console.log(convertpxtovh(6144));
+//----------------------------------------------Function voyageAnimate------------------------------------------------------//
 
 function voyageAnimate(position2, duree) {
     voyage.animate([
@@ -44,7 +45,7 @@ function voyageAnimate(position2, duree) {
             fill: "forwards",
         })
 };
-//----------------------------------------------animation ballons ----------------------------------------------------------//
+//----------------------------------------------    ||  ANIMATION BALLONS  ET TEXTE ||   -----------------------------------//
 
 let ballon1 = document.querySelector('.ballon01');
 let ballon2 = document.querySelector('.ballon02');
@@ -68,26 +69,19 @@ window.addEventListener('scroll', () => {
     }
 })
 
-
-
-
-//----------------------------------------------animation musique ----------------------------------------------------------//
-
-
-
-
+//----------------------------------------------    ||  ANIMATION MUSIQUE  ||   --------------------------------------------//
 
 const sectionmusique = document.querySelector('#containermusique');
 const articlemusique = document.createElement('article');
 articlemusique.classList.add('columnPlay');
 let tab = ["basse", "batterie", "clochettes", "Pipa", "techno", "voices"];
 
+//----------------------------------------------constructeur buttons musiques----------------------------------------------//
+
 for (let i = 0; i < tab.length; i++) {
 
     const instrument = tab[i];
-
     let audiofile = new Audio(`./musique/${instrument}.mp3`);
-
     let start = false;
 
     let containercircle1 = document.createElement('div');
@@ -132,6 +126,9 @@ for (let i = 0; i < tab.length; i++) {
     containercircle2.appendChild(circle2);
     circle2.appendChild(playpause);
 };
+
+//--------------------------------------constructeur animation lottie/musique/background-----------------------------------//
+
 let audiomorceau = new Audio('./musique/morceau.mp3');
 let anim = document.querySelector('#anim');
 let lottie = document.querySelector('#lottie');
@@ -166,3 +163,13 @@ anim.addEventListener('click', () => {
         go = false;
     }
 })
+
+// if (window.scrollY > 4000) {
+//     navette.animate([
+//         { transform: "rotate(180deg)" }
+//     ],
+//         {
+//             duration: 4000,
+//             fill: 'forwards'
+//         })
+// }

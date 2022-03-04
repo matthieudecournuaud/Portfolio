@@ -5,7 +5,7 @@
 }
 
 body {
-  height: 600vh;
+  height: 540vh;
   background-color: #101722;
 }
 body main {
@@ -447,6 +447,29 @@ body main #containermusique .columnPlay .containercircle1 .circle1 .containercir
 body main #containermusique .columnPlay .circle1:hover {
   border: solid 1px #cecbc9;
 }
+body main #dernier {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 50vh;
+  top: 450vh;
+  position: absolute;
+  z-index: 3;
+  color: white;
+}
+body main #dernier #article1 {
+  width: 30%;
+  height: 100%;
+  background-color: #101722;
+  border-radius: 24px;
+}
+body main #dernier #article2 {
+  width: 30%;
+  height: 100%;
+  background-color: #B92A55;
+  margin-right: 6%;
+  border-radius: 24px;
+}
 body main #scene {
   position: relative;
   overflow-y: scroll;
@@ -474,10 +497,10 @@ body main #scene #titre1 h2 {
 }
 body main #scene #bgstars1 {
   width: 100%;
+  height: 97%;
 }
 body main #scene #bgstarsN2 {
   width: 100%;
-  top: 0;
 }
 body main #scene #bgstarsN2 .BgimgstarsN2 {
   width: 100%;
@@ -596,7 +619,7 @@ body main #scene .trounoir img {
 }
 body main #scene .containervoyage {
   margin-left: 20%;
-  width: 134px;
+  width: 10%;
   height: 100%;
 }
 body main #scene .containervoyage #containernavette {
@@ -607,18 +630,20 @@ body main #scene .containervoyage #containernavette img {
 }
 body main #ballons {
   width: 100%;
-  height: 50vh;
+  height: 15vh;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  background: transparent;
+  background-image: url(../images/earth.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 body main #ballons #ballonsfloat {
-  width: 40%;
+  position: absolute;
+  width: 50%;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
-  background: transparent;
 }
 body main #ballons #ballonsfloat .ballon01 {
   visibility: hidden;
@@ -633,47 +658,53 @@ body main #ballons #ballonsfloat .ballon {
   width: 2vw;
   -webkit-animation-name: ballon1;
           animation-name: ballon1;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   visibility: visible;
+  margin-right: 30%;
 }
 body main #ballons #ballonsfloat .ballon img {
   width: 100%;
 }
 @-webkit-keyframes ballon1 {
   0% {
-    transform: translateY(0vh);
+    transform: translateY(-9vh);
   }
   100% {
-    transform: translateY(-3vh);
+    transform: translateY(-12vh);
   }
 }
 @keyframes ballon1 {
   0% {
-    transform: translateY(0vh);
+    transform: translateY(-9vh);
   }
   100% {
-    transform: translateY(-3vh);
+    transform: translateY(-12vh);
   }
 }
 body main #ballons #ballonsfloat .ballon2 {
   width: 6vw;
   -webkit-animation-name: ballon2;
           animation-name: ballon2;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   visibility: visible;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 body main #ballons #ballonsfloat .ballon2 img {
   width: 100%;
 }
 @-webkit-keyframes ballon2 {
   0% {
-    transform: translateY(0vh);
+    transform: translateY(-10vh);
+  }
+  50% {
+    transform: translateY(-11vh);
   }
   100% {
     transform: translateY(-10vh);
@@ -681,7 +712,10 @@ body main #ballons #ballonsfloat .ballon2 img {
 }
 @keyframes ballon2 {
   0% {
-    transform: translateY(0vh);
+    transform: translateY(-10vh);
+  }
+  50% {
+    transform: translateY(-11vh);
   }
   100% {
     transform: translateY(-10vh);
@@ -689,36 +723,39 @@ body main #ballons #ballonsfloat .ballon2 img {
 }
 body main #ballons #ballonsfloat .ballon3 {
   width: 10vw;
-  -webkit-animation-name: ballon3;
-          animation-name: ballon3;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation: ballon3pre;
+          animation: ballon3pre;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  visibility: visible;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  visibility: visible;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  margin-right: 10%;
 }
 body main #ballons #ballonsfloat .ballon3 img {
   width: 100%;
 }
-@-webkit-keyframes ballon3 {
+@-webkit-keyframes ballon3pre {
   0% {
-    transform: translateY(0vh);
+    transform: translateY(-5vh);
+  }
+  50% {
+    transform: translateY(-7vh);
   }
   100% {
-    transform: translateY(-10vh);
+    transform: translateY(-5vh);
   }
 }
-@keyframes ballon3 {
+@keyframes ballon3pre {
   0% {
-    transform: translateY(0vh);
+    transform: translateY(-5vh);
+  }
+  50% {
+    transform: translateY(-7vh);
   }
   100% {
-    transform: translateY(-10vh);
+    transform: translateY(-5vh);
   }
-}
-body main .earth {
-  width: 100%;
-}
-body main .earth img {
-  width: 100%;
 }/*# sourceMappingURL=style.css.map */
