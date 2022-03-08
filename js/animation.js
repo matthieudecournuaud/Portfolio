@@ -50,8 +50,7 @@ scene.add(frontLight);
 function animate() {
     requestAnimationFrame(animate);
     sphere.rotation.x = 100;
-    sphere.rotation.y += 0.003;
-    // sphere.rotation.z = 5;
+    sphere.rotation.y += 0.001;
 
     renderer.render(scene, camera);
 }
