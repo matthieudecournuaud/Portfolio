@@ -76,6 +76,7 @@ body {
                                 .buttoncarousel {
                                     display: flex;
                                     justify-content: space-around;
+                                    // height: 5vh;
                                     .carousel-control-prev {
                                         position: relative;
                                         .carousel-control-prev-icon {
@@ -100,7 +101,7 @@ body {
                         font-family: 'Poppins';
                         font-size: 3rem;
                         font-weight: 300;
-                        line-height: 3em;
+                        line-height: 1.5em;
                     }
                     @media screen and (max-width: 1130px) {
                         h2 {
@@ -496,7 +497,7 @@ body {
                     justify-content: space-evenly;
                     align-items: center;
                     div {
-                        width: 30%;
+                        width: 40%;
                         height: 80%;
                         display: flex;
                         flex-direction: column;
@@ -505,7 +506,7 @@ body {
                             font-size: 1.5rem;
                             font-weight: 500;
                             text-decoration: none;
-                            line-height: 4rem;
+                            line-height:3rem;
                             color:#B92A55;
                         }
                         @media screen and (max-width:1100px) {
