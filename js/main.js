@@ -5,17 +5,13 @@ var image = document.querySelector('.BgimgstarsN2');
 new simpleParallax(image, {
     delay: 0.8
 });
+var image = document.querySelector('.BgimgstarsN3');
+new simpleParallax(image, {
+    delay: 0.8
+});
 
 let voyage = document.querySelector('#containernavette');
 let navette = document.querySelector('#navette');
-
-let containertexte = document.querySelector('.containertexte');
-let containerbloc = document.querySelector('.containerbloc');
-let bloctexte = document.querySelector('.bloctexte');
-
-let containertexte3 = document.querySelector('.containertexte3');
-let containerbloc3 = document.querySelector('.containerbloc3');
-let bloctexte3 = document.querySelector('.bloctexte3');
 
 //--------------------------------------------    ||  ANIMATION VOYAGE  ||   ---------------------------------------------//
 
@@ -33,9 +29,7 @@ window.addEventListener('scroll', () => {
 function convertpxtovh(px) {
     return 100 * (px / window.innerHeight);
 }
-console.log(convertpxtovh(6144));
 //----------------------------------------------Function voyageAnimate------------------------------------------------------//
-
 function voyageAnimate(position2, duree) {
     voyage.animate([
         { transform: `translateY(${position2}vh)` }
@@ -52,16 +46,6 @@ let ballon2 = document.querySelector('.ballon02');
 let ballon3 = document.querySelector('.ballon03');
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 800 && window.scrollY < 1500) {
-        containertexte.classList.add('containertexte2');
-        containerbloc.classList.add('containerbloc2');
-        bloctexte.classList.add('bloctexte2');
-    }
-    if (window.scrollY > 1550 && window.scrollY < 2000) {
-        containertexte3.classList.add('containertexte4');
-        containerbloc3.classList.add('containerbloc4');
-        bloctexte3.classList.add('bloctexte4');
-    }
     if (window.scrollY > 2600) {
         ballon1.classList.add('ballon');
         ballon2.classList.add('ballon2');
@@ -77,6 +61,7 @@ articlemusique.classList.add('columnPlay');
 let tab = ["basse", "batterie", "clochettes", "Pipa", "techno", "voices"];
 
 //----------------------------------------------constructeur buttons musiques----------------------------------------------//
+
 
 for (let i = 0; i < tab.length; i++) {
 
@@ -133,7 +118,6 @@ let audiomorceau = new Audio('./musique/morceau.mp3');
 let anim = document.querySelector('#anim');
 let lottie = document.querySelector('#lottie');
 let go = false;
-console.log(lottie);
 
 if (typeof audiomorceau.loop == 'boolean') {
     audiomorceau.loop = true;
@@ -163,13 +147,3 @@ anim.addEventListener('click', () => {
         go = false;
     }
 })
-
-// if (window.scrollY > 4000) {
-//     navette.animate([
-//         { transform: "rotate(180deg)" }
-//     ],
-//         {
-//             duration: 4000,
-//             fill: 'forwards'
-//         })
-// }
