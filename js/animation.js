@@ -23,7 +23,7 @@ camera.position.x = -3;
 camera.position.y = -0.5;
 
 
-const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+const renderer = new THREE.WebGLRenderer({ alpha: true });
 renderer.setClearColor(0x000000, 0);
 
 
@@ -45,8 +45,6 @@ const frontLight = new THREE.DirectionalLight(0xffffff, 1);
 frontLight.position.set(-200, 3000, -1500).normalize();
 scene.add(frontLight);
 
-
-
 function animate() {
     requestAnimationFrame(animate);
     sphere.rotation.x = 100;
@@ -55,3 +53,4 @@ function animate() {
     renderer.render(scene, camera);
 }
 animate();
+

@@ -2,6 +2,7 @@ var scene = document.querySelector('#scene');
 var parallaxInstance = new Parallax(scene);
 
 var image = document.querySelector('.BgimgstarsN2');
+
 new simpleParallax(image, {
     delay: 0.8
 });
@@ -115,8 +116,9 @@ for (let i = 0; i < tab.length; i++) {
 //--------------------------------------constructeur animation lottie/musique/background-----------------------------------//
 
 let audiomorceau = new Audio('./musique/morceau.mp3');
-let anim = document.querySelector('#anim');
-let lottie = document.querySelector('#lottie');
+
+let buttonplay = document.querySelector('#buttonanimplay');
+
 let go = false;
 
 if (typeof audiomorceau.loop == 'boolean') {
@@ -130,13 +132,12 @@ else {
 }
 
 let gradientmove = document.querySelector('#containermusique');
-anim.addEventListener('click', () => {
+buttonplay.addEventListener('click', () => {
 
     if (go == false) {
         gradientmove.style.animationName = 'gradientmove';
         gradientmove.style.animationDuration = '10s';
         gradientmove.style.animationIterationCount = 'infinite';
-
         audiomorceau.play();
         lottie.play();
         go = true;

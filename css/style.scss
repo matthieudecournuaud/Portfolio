@@ -158,10 +158,20 @@ body {
                     justify-content: space-between;
                 }    
             }
+            @media screen and (max-width:700px) {
+                .containerbloc2 {
+                    align-items: center;
+                    margin-left: 45%;
+                    height: 100%;
+                }
+            }
         }
         @media screen and (max-width:700px) {
             .containertexte2 {
+                justify-content: center;
                 max-height: 50%;
+                top: 100vh;
+                border-radius: 0;
             }
         }
         //---------------------------------------------- bloc 2 ------------------------------------------------------//
@@ -337,11 +347,18 @@ body {
                     flex-direction: column;
                     max-height: 80%;
                 } 
-             }   
+            }
+            @media screen and (max-width: 700px) {
+                .containerbloc4{
+                    margin-left: 0;
+                } 
+            }   
         }
         @media screen and (max-width:700px) {
             .containertexte4 {
                 max-height: 50%;
+                top: 170vh;
+                border-radius: 0;
             }
         }
         #containermusique {
@@ -356,7 +373,8 @@ body {
             align-items: center;
             border-radius: 24px;
             background-size: 2000% 2000%;
-            background-color: #080B10;
+            background-color: #0f1016;
+            border: 1px solid rgba(255, 255, 255, 0.548);
             @keyframes gradientmove {
                 0%{
                     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 35%, rgba(185,42,85,1) 47%, rgba(185,42,85,1) 51%, rgba(185,42,85,1) 53%, rgba(2,0,36,1) 65%, rgba(2,0,36,1) 100%);
@@ -366,20 +384,61 @@ body {
                 }
             }
             #anim {
-                width: 40%;
+                width: 100%;
                 margin-top: 60vh;
                 position: absolute;
                 z-index: 4;
                 display: flex;
                 justify-content: center;
-                cursor: url("../images/cursor.png"), pointer;
+                align-items: center;
+                // flex-direction: column;
+                #dada {
+                    #buttonplay {
+                        width: 11vw;
+                        height: 11vw;
+                        border-radius: 50%;
+                        min-width: 110px;
+                        min-height: 110px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        right: 10vw;
+                        // background-color: #cecbc9;
+                        border: 1px solid #a7a5a5;
+                        button {
+                            color:white;
+                            border-radius: 50%;
+                            width: 8vw;
+                            height: 8vw;
+                            min-width: 80px;
+                            min-height: 80px;
+                            background: linear-gradient(145deg, #1e222c, #191d25);
+                            border: none;
+                            box-shadow:  11px 11px 22px #0f1115,
+                                        -11px -11px 22px #292f3d;
+                        }
+                    }
+                    @media screen and (max-width: 1100px) {
+                            button{
+                                font-size: small;
+                            }
+                    }                
+                }
+            } 
+            @media screen and (max-width: 700px) {
+                #anim {
+                    flex-direction: column;
+                }
+                #lottie {
+                    max-width: 100px;
+                }
             }
             h1 {
                 color: #cecbc9;
             }
             .columnPlay {
                 width: 70%;
-                height: 40%;
+                height: 55%;
                 display: flex;
                 justify-content: space-around;
                 position: relative;
@@ -390,6 +449,7 @@ body {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    transition: 0.6s;
                     .circle1 {
                         width: 80%;
                         height: 80%;
@@ -398,6 +458,8 @@ body {
                         align-items: center;
                         border-radius: 50%;
                         border: solid 1px rgba(206, 203, 201, 0.4);
+                        box-shadow:  5px 5px 15px #000000,
+                        -5px -5px 15px #393644;
                         .containercircle2 {
                             width: 3vw;
                             height: 3vw;
@@ -413,8 +475,7 @@ body {
                                     width: 80%;
                                     height: 80%;
                                     border-radius: 50%;
-                                    background-color: #080B10;
-                                }
+                                    background: linear-gradient(145deg, #121924, #0f151f)                                }
                                 @keyframes son1 {
                                     0% {
                                         width: 80%;
@@ -452,6 +513,10 @@ body {
                         }
                     }
                 }
+                .containercircle1:hover {
+                    width: 8vw;
+                    height: 8vw;
+                }
                 .circle1:hover {
                     border: solid 1px rgba(206, 203, 201, 1);
                 }
@@ -467,7 +532,10 @@ body {
                 }
             }
         }
-        @media screen and (max-width: 720px) {
+        @media screen and (max-width: 700px) {
+            #containermusique {
+                top: 240vh;
+            }
             h1 {
                 font-size: 1.5rem;
                 text-align: center;
@@ -546,6 +614,10 @@ body {
                     max-width: 50%;
                     overflow: scroll auto;
                 }
+                #article1 {
+                    border-radius: 0;
+
+                }
                 div:not(#containerdernier) {
                     min-width: 80%;
                 }
@@ -560,6 +632,11 @@ body {
                        overflow-block: scroll;
                    }
                 }
+            }
+        }
+        @media screen and (max-width:700px) {
+            #dernier {
+                top: 360vh;
             }
         }
 
@@ -603,32 +680,50 @@ body {
                     width:100%;
                 }
             }
-            // .saturne {
-            //     width: 60%;
-            //     margin-top: 10vh;
-            //     margin-left: 60%;
-            //     img {
-            //         width: 100%;
-            //     }
-            // }
+            @media screen and (max-width: 700px) {
+                #bgstars1 {
+                    height: 100%;
+                }
+                #bgstarsN2 {
+                    display: none;
+                    .BgimgstarsN2 {
+                        display: none;
+                    }
+                }
+                #bgstarsN3 {
+                    display: none;
+                }
+                .BgimgstarsN3 {
+                    display: none;
+                }
+            }
             .canvasbloc1 {
                 width: 100%;
                 height: 100vh;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                margin-top: 0vh;
                 .canvasbloc2 {
                     width: 100%;
                     height: 100%;
                     display: flex;
                     justify-content: flex-end;
-                    // align-items: center;
                     .divcanvas {
                         display: flex;
                         justify-content: flex-end;
                         width: 100%;
                         height:100%;
+                    }
+                }
+            }
+            @media screen and (max-width: 700px) {
+                .canvasbloc1 {
+                    display: none;
+                    .canvasbloc2 {
+                        display: none;
+                        .divcanvas {
+                            display: none;
+                            canvas {
+                                display: none;
+                            }
+                        }
                     }
                 }
             }
@@ -695,13 +790,56 @@ body {
                     }
                 }
             }
+            @media screen and (max-width: 700px) {
+                .asteroide {
+                    visibility: hidden;
+                }
+            }
             .trounoir {
                 width: 20vw;
-                margin-top: 155vh;
+                min-width: 200px;
+
+                margin-top: 165vh;
                 margin-left: -10vw;
                 opacity: 70%;
                 img {
                     width: 100%;
+                }
+            }
+            @media screen and (max-width: 700px) {
+                .trounoir {
+                        margin-left: -10vw;
+                        margin-top: 120vh;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            @media screen and (max-width: 640px) {
+                .trounoir {
+                        margin-left: -15vw;
+                        margin-top: 120vh;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            @media screen and (max-width: 450px) {
+                .trounoir {
+                        margin-left: -25vw;
+                        margin-top: 100vh;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            @media screen and (max-width: 390px) {
+                .trounoir {
+                        margin-left: -30vw;
+                        margin-top: 100vh;
+                    img {
+                        width: 100%;
+                    }
                 }
             }   
             //---------------------------------------------------------------- structure voyage ------------------------------------------------------- 
@@ -831,4 +969,9 @@ body {
             }
         }
     }
+}
+@media screen and (max-width: 450px) {
+   body {
+       height: 450vh;
+   }
 }      

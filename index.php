@@ -141,6 +141,11 @@
         <section id="containermusique">
             <h1>Jouer seul c'est bien,<br>Jouer en équipe, c'est mieux !</h1>
             <div id="anim">
+                <div id="dada">
+                    <div id="buttonplay">
+                        <button id="buttonanimplay">Let's dance !</button>
+                    </div>
+                </div>
                 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                 <lottie-player id="lottie" src="https://assets5.lottiefiles.com/packages/lf20_euaveaxu.json" background="transparent" speed="1.5" style="width: 300px; height: 300px;" loop></lottie-player>
             </div>
