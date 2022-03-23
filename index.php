@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" , maximum-scale=1, user-scalable=no>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -56,7 +56,7 @@
                                 <h3>Lien du projet :</h3>
                                 <a href="https://github.com/matthieudecournuaud/Fiche-Profil" target="_blank">Fiche Profil</a>
                                 <h3 class="h3disparait">Présentation du projet :</h3>
-                                <p>Le but de ce projet était de découvrir CSS et javascript. On affiche les informations dans un rendu graphique permettant une compréhension rapide. Projet en cours.</p>
+                                <p>Le but de ce projet était de découvrir CSS et javascript. On affiche les informations dans un rendu graphique permettant une compréhension rapide. Découverte du Neumorphisme et adaptations de certaines animations au contenu. Les informations ne sont pas encore actualisées. Projet en cours. </p>
                                 <div class="containerh3">
                                     <h3>Languages utilisés :</h3>
                                     <h3 class="orange">Outils utilisés :</h3>

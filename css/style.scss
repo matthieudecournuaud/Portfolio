@@ -20,7 +20,7 @@ body {
         .containertexte2 {
             width: 100%;
             height: 90%;    
-            top: 130vh;
+            top: 120vh;
             position: absolute;
             display: flex;
             justify-content: flex-start;
@@ -59,37 +59,38 @@ body {
                             }
                             @media screen and ( max-width: 720px ) {
                                 .carousel-item.active {
-                                    max-height: 20vh;
+                                    max-height: 80vh;
                                 }
-                                p {
-                                    display: none;
-                                }
-                                .h3disparait {
-                                    display: none;
-                                }                                
+                                // p {
+                                //     // display: none;
+                                // }
+                                // .h3disparait {
+                                //     // display: none;
+                                // }                                
                             }
                             .articlecarousel {
                                 width: 100%;
-                                height: 7vh;
+                                height: 10vh;
                                 display: flex;
                                 justify-content: flex-start;
                                 .buttoncarousel {
                                     display: flex;
                                     justify-content: space-around;
-                                    // height: 5vh;
                                     .carousel-control-prev {
                                         position: relative;
+                                        min-width: 6vw;
                                         .carousel-control-prev-icon {
                                             width: 10vw;
-                                            height: 10vh;
+                                            height: 6vh;
                                             background-image: url("../images/left.svg");
                                         }
                                     }
                                     .carousel-control-next {
                                         position: relative;
+                                        min-width: 6vw;
                                         .carousel-control-next-icon {
                                             width: 10vw;
-                                            height: 10vh;
+                                            height: 6vh;
                                             background-image: url("../images/right.svg");
                                         }
                                     }
@@ -160,16 +161,18 @@ body {
             }
             @media screen and (max-width:700px) {
                 .containerbloc2 {
+                    display: flex;
                     align-items: center;
-                    margin-left: 45%;
+                    margin-left: 0%;
                     height: 100%;
+                    width: 100%;
                 }
             }
         }
         @media screen and (max-width:700px) {
             .containertexte2 {
                 justify-content: center;
-                max-height: 50%;
+                max-height: 80%;
                 top: 100vh;
                 border-radius: 0;
             }
@@ -352,12 +355,24 @@ body {
                 .containerbloc4{
                     margin-left: 0;
                 } 
+            } 
+            @media screen and (max-width: 390px) {
+                .containerbloc4{
+                    width: 80%;
+                } 
             }   
         }
         @media screen and (max-width:700px) {
             .containertexte4 {
-                max-height: 50%;
-                top: 170vh;
+                max-height: 80%;
+                top: 230vh;
+                border-radius: 0;
+            }
+        }
+        @media screen and (max-width:390px) {
+            .containertexte4 {
+                max-height: 80%;
+                top: 200vh;
                 border-radius: 0;
             }
         }
@@ -522,9 +537,10 @@ body {
                 }
             }
             @media screen and (max-width: 880px) {
-                #lottie {
-                    min-width: 30vh;
-                }
+                    #lottie {
+                        max-height: 20vh;
+                        min-width: 20vh;
+                    }
             }
             @media screen and (max-width: 780px) {
                 .columnPlay {
@@ -534,7 +550,19 @@ body {
         }
         @media screen and (max-width: 700px) {
             #containermusique {
-                top: 240vh;
+                top: 300vh;
+            }
+            h1 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+        }
+        @media screen and (max-width: 390px) {
+            #containermusique {
+                height: 80%;
+            }
+            #anim {
+                margin: 18vh;
             }
             h1 {
                 font-size: 1.5rem;
@@ -596,16 +624,10 @@ body {
                         }
                     }
                 }
-            }
-            @media screen and (max-width:1130px) {
-                #containerdernier {
-                    overflow: scroll auto;
-                }
-                #article1 {
-                    overflow: scroll auto;
-                }
-                div:not(#containerdernier) {
-                 overflow: scroll auto;
+                @media screen and (max-width:390px) {
+                    #containerdernier {
+                        width: 100%;
+                    }
                 }
             }
             @media screen and (max-width:700px) {
@@ -626,10 +648,11 @@ body {
                 #article1 {
                     display: flex;
                     flex-direction: column;
-                    align-items: flex-end;
+                    align-items: center;
                    div {
-                       min-width: 60%;
+                       min-width: 95%;
                        overflow-block: scroll;
+                       justify-content: center;
                    }
                 }
             }
@@ -637,6 +660,16 @@ body {
         @media screen and (max-width:700px) {
             #dernier {
                 top: 360vh;
+            }
+        }
+        @media screen and (max-width:390px) {
+            #dernier {
+                height: 80vh;
+                justify-content: center;
+                top: 400vh;
+            }
+            #containerdernier {
+                text-align: center;
             }
         }
 
@@ -774,7 +807,7 @@ body {
                 margin-top: 265vh;
                 margin-left: -2vw;  
                 animation-name: turn3;
-                animation-duration: 60s;
+                animation-duration: 80s;
                 animation-timing-function: linear;
                 animation-iteration-count: infinite;    
                 img {
@@ -785,7 +818,7 @@ body {
                         transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
                     }
                     100% {
-                        transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg);
+                        transform: rotateX(0deg) rotateY(00deg) rotateZ(360deg);
 
                     }
                 }
@@ -793,6 +826,14 @@ body {
             @media screen and (max-width: 700px) {
                 .asteroide {
                     visibility: hidden;
+                }
+            }
+            @media screen and (max-width: 390px) {
+                .asteroide {
+                    width: 20vw;
+                    visibility: visible;
+                    margin-top: 185vh;
+                    margin-left: 60vw; 
                 }
             }
             .trounoir {
@@ -809,7 +850,7 @@ body {
             @media screen and (max-width: 700px) {
                 .trounoir {
                         margin-left: -10vw;
-                        margin-top: 120vh;
+                        margin-top: 10vh;
                     img {
                         width: 100%;
                     }
@@ -835,10 +876,11 @@ body {
             }
             @media screen and (max-width: 390px) {
                 .trounoir {
-                        margin-left: -30vw;
-                        margin-top: 100vh;
+                        width: 90vw;
+                        margin-left: 15vw;
+                        margin-top: 90vh;
                     img {
-                        width: 100%;
+                        width: 80%;
                     }
                 }
             }   
@@ -974,4 +1016,9 @@ body {
    body {
        height: 450vh;
    }
-}      
+}
+@media screen and (max-width: 390px) {
+    body {
+        height: 540vh;
+    }
+ }       

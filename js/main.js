@@ -32,9 +32,9 @@ function convertpxtovh(px) {
 }
 //----------------------------------------------Function voyageAnimate------------------------------------------------------//
 function voyageAnimate(position2, duree) {
-    voyage.animate([
+    voyage.animate(
         { transform: `translateY(${position2}vh)` }
-    ],
+        ,
         {
             duration: duree,
             fill: "forwards",

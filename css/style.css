@@ -21,7 +21,7 @@ body main {
 body main .containertexte2 {
   width: 100%;
   height: 90%;
-  top: 130vh;
+  top: 120vh;
   position: absolute;
   display: flex;
   justify-content: flex-start;
@@ -65,18 +65,12 @@ body main .containertexte2 .containerbloc2 .bloctexte2 #carouselExampleIndicator
 }
 @media screen and (max-width: 720px) {
   body main .containertexte2 .containerbloc2 .bloctexte2 #carouselExampleIndicators .carousel-inner .carousel-item.active {
-    max-height: 20vh;
-  }
-  body main .containertexte2 .containerbloc2 .bloctexte2 #carouselExampleIndicators .carousel-inner p {
-    display: none;
-  }
-  body main .containertexte2 .containerbloc2 .bloctexte2 #carouselExampleIndicators .carousel-inner .h3disparait {
-    display: none;
+    max-height: 80vh;
   }
 }
 body main .containertexte2 .containerbloc2 .bloctexte2 #carouselExampleIndicators .carousel-inner .articlecarousel {
   width: 100%;
-  height: 7vh;
+  height: 10vh;
   display: flex;
   justify-content: flex-start;
 }
@@ -86,18 +80,20 @@ body main .containertexte2 .containerbloc2 .bloctexte2 #carouselExampleIndicator
 }
 body main .containertexte2 .containerbloc2 .bloctexte2 #carouselExampleIndicators .carousel-inner .articlecarousel .buttoncarousel .carousel-control-prev {
   position: relative;
+  min-width: 6vw;
 }
 body main .containertexte2 .containerbloc2 .bloctexte2 #carouselExampleIndicators .carousel-inner .articlecarousel .buttoncarousel .carousel-control-prev .carousel-control-prev-icon {
   width: 10vw;
-  height: 10vh;
+  height: 6vh;
   background-image: url("../images/left.svg");
 }
 body main .containertexte2 .containerbloc2 .bloctexte2 #carouselExampleIndicators .carousel-inner .articlecarousel .buttoncarousel .carousel-control-next {
   position: relative;
+  min-width: 6vw;
 }
 body main .containertexte2 .containerbloc2 .bloctexte2 #carouselExampleIndicators .carousel-inner .articlecarousel .buttoncarousel .carousel-control-next .carousel-control-next-icon {
   width: 10vw;
-  height: 10vh;
+  height: 6vh;
   background-image: url("../images/right.svg");
 }
 body main .containertexte2 .containerbloc2 .bloctexte2 h2 {
@@ -159,15 +155,17 @@ body main .containertexte2 .containerbloc2 .containerh4 {
 }
 @media screen and (max-width: 700px) {
   body main .containertexte2 .containerbloc2 {
+    display: flex;
     align-items: center;
-    margin-left: 45%;
+    margin-left: 0%;
     height: 100%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 700px) {
   body main .containertexte2 {
     justify-content: center;
-    max-height: 50%;
+    max-height: 80%;
     top: 100vh;
     border-radius: 0;
   }
@@ -350,10 +348,22 @@ body main .containertexte4 .containerbloc4 #h2apparait {
     margin-left: 0;
   }
 }
+@media screen and (max-width: 390px) {
+  body main .containertexte4 .containerbloc4 {
+    width: 80%;
+  }
+}
 @media screen and (max-width: 700px) {
   body main .containertexte4 {
-    max-height: 50%;
-    top: 170vh;
+    max-height: 80%;
+    top: 230vh;
+    border-radius: 0;
+  }
+}
+@media screen and (max-width: 390px) {
+  body main .containertexte4 {
+    max-height: 80%;
+    top: 200vh;
     border-radius: 0;
   }
 }
@@ -552,7 +562,8 @@ body main #containermusique .columnPlay .circle1:hover {
 }
 @media screen and (max-width: 880px) {
   body main #containermusique #lottie {
-    min-width: 30vh;
+    max-height: 20vh;
+    min-width: 20vh;
   }
 }
 @media screen and (max-width: 780px) {
@@ -562,7 +573,19 @@ body main #containermusique .columnPlay .circle1:hover {
 }
 @media screen and (max-width: 700px) {
   body main #containermusique {
-    top: 240vh;
+    top: 300vh;
+  }
+  body main h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 390px) {
+  body main #containermusique {
+    height: 80%;
+  }
+  body main #anim {
+    margin: 18vh;
   }
   body main h1 {
     font-size: 1.5rem;
@@ -625,15 +648,9 @@ body main #dernier #article1 #containerdernier div p {
 body main #dernier #article1 #containerdernier div a {
   color: #E98A46;
 }
-@media screen and (max-width: 1130px) {
-  body main #dernier #containerdernier {
-    overflow: scroll auto;
-  }
-  body main #dernier #article1 {
-    overflow: scroll auto;
-  }
-  body main #dernier div:not(#containerdernier) {
-    overflow: scroll auto;
+@media screen and (max-width: 390px) {
+  body main #dernier #article1 #containerdernier {
+    width: 100%;
   }
 }
 @media screen and (max-width: 700px) {
@@ -653,16 +670,27 @@ body main #dernier #article1 #containerdernier div a {
   body main #dernier #article1 {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
   }
   body main #dernier #article1 div {
-    min-width: 60%;
+    min-width: 95%;
     overflow-block: scroll;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 700px) {
   body main #dernier {
     top: 360vh;
+  }
+}
+@media screen and (max-width: 390px) {
+  body main #dernier {
+    height: 80vh;
+    justify-content: center;
+    top: 400vh;
+  }
+  body main #containerdernier {
+    text-align: center;
   }
 }
 body main #scene {
@@ -824,8 +852,8 @@ body main #scene .asteroide {
   margin-left: -2vw;
   -webkit-animation-name: turn3;
           animation-name: turn3;
-  -webkit-animation-duration: 60s;
-          animation-duration: 60s;
+  -webkit-animation-duration: 80s;
+          animation-duration: 80s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
@@ -855,6 +883,14 @@ body main #scene .asteroide img {
     visibility: hidden;
   }
 }
+@media screen and (max-width: 390px) {
+  body main #scene .asteroide {
+    width: 20vw;
+    visibility: visible;
+    margin-top: 185vh;
+    margin-left: 60vw;
+  }
+}
 body main #scene .trounoir {
   width: 20vw;
   min-width: 200px;
@@ -868,7 +904,7 @@ body main #scene .trounoir img {
 @media screen and (max-width: 700px) {
   body main #scene .trounoir {
     margin-left: -10vw;
-    margin-top: 120vh;
+    margin-top: 10vh;
   }
   body main #scene .trounoir img {
     width: 100%;
@@ -894,11 +930,12 @@ body main #scene .trounoir img {
 }
 @media screen and (max-width: 390px) {
   body main #scene .trounoir {
-    margin-left: -30vw;
-    margin-top: 100vh;
+    width: 90vw;
+    margin-left: 15vw;
+    margin-top: 90vh;
   }
   body main #scene .trounoir img {
-    width: 100%;
+    width: 80%;
   }
 }
 body main #scene .containervoyage {
@@ -1069,5 +1106,10 @@ body main #ballons #ballonsfloat .ballon3 img {
 @media screen and (max-width: 450px) {
   body {
     height: 450vh;
+  }
+}
+@media screen and (max-width: 390px) {
+  body {
+    height: 540vh;
   }
 }/*# sourceMappingURL=style.css.map */
